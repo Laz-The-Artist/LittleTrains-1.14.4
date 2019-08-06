@@ -9,3 +9,6 @@ and during the development, will turn out wich files are the duplicates and wich
 
 im sure i need go trough them, cuz they have been made in 1.12's style... when you add a thing from the planned chat, 
 i will look up on its texture and model to apply some "1.14-ness"
+
+
+i will edit this file, cuz i need to change something to make test commits... im setting up the discord webhook.
