@@ -1,0 +1,26 @@
+modLoader="javafml"
+loaderVersion="[24,)"
+
+[[mods]]
+modId="littletrains"
+version="1.0"
+displayName="Little Trains"
+logoFile="logo.png"
+description='''
+Null.
+'''
+credits= "Mod by MultiTeam -Code by Redstoneguy129 -Resources by King_of_Creepers"
+authors= "MultiTeam"
+
+[[dependencies.littletrains]]
+    modId="forge"
+    mandatory=true
+    versionRange="[26,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.littletrains]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.14.4]"
+    ordering="NONE"
+side="BOTH"
