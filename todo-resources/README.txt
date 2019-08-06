@@ -11,4 +11,5 @@ im sure i need go trough them, cuz they have been made in 1.12's style... when y
 i will look up on its texture and model to apply some "1.14-ness"
 
 
-i will edit this file, cuz i need to change something to make test commits... im setting up the discord webhook.
+i will edit this file, cuz i need to change something to make test commits... im setting up the discord webhook. attempt# failed....
+attempt#2:
