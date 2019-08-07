@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "littletrains:block/copper_block"
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "name": "tin_ore",
+            "conditions": [
+                {
+                    "condition": "minecraft:survives_explosion"
+                }
+            ],
+            "entries": [
+                {
+                    "name": "littletrains:tin_ore",
+                    "type": "minecraft:item"
+                }
+            ],
+            "rolls": 1
+        }
+    ],
+    "type": "minecraft:block"
+}

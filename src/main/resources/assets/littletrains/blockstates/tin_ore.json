@@ -1,0 +1,7 @@
+{
+    "variants": {
+        "": {
+            "model": "littletrains:block/tin_ore"
+        }
+    }
+}
