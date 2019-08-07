@@ -1,0 +1,20 @@
+{
+    "pools": [
+        {
+            "name": "track_grassplated",
+            "conditions": [
+                {
+                    "condition": "minecraft:survives_explosion"
+                }
+            ],
+            "entries": [
+                {
+                    "name": "littletrains:track_grassplated",
+                    "type": "minecraft:item"
+                }
+            ],
+            "rolls": 1
+        }
+    ],
+    "type": "minecraft:block"
+}

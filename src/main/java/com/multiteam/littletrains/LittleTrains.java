@@ -3,6 +3,7 @@ package com.multiteam.littletrains;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import com.multiteam.littletrains.blocks.LTBlock;
 import com.multiteam.littletrains.init.LTBlockInit;
 import com.multiteam.littletrains.init.LTItemInit;
 
@@ -51,6 +52,13 @@ public class LittleTrains {
 		@SubscribeEvent
 		public static void RegisterItems(final RegistryEvent.Register<Item> event) {
 			event.getRegistry().registerAll (
+					//Tracks
+					LTItemInit.TRACK = new BlockItem(LTBlockInit.TRACK, new Item.Properties().group(littletrainsitems)).setRegistryName(LTBlockInit.TRACK.getRegistryName()),
+					LTItemInit.TRACK_BALLASTED = new BlockItem(LTBlockInit.TRACK_BALLASTED, new Item.Properties().group(littletrainsitems)).setRegistryName(LTBlockInit.TRACK_BALLASTED.getRegistryName()),
+					LTItemInit.TRACK_GRASSPLATED = new BlockItem(LTBlockInit.TRACK_GRASSPLATED, new Item.Properties().group(littletrainsitems)).setRegistryName(LTBlockInit.TRACK_GRASSPLATED.getRegistryName()),
+					
+					
+					//Other
 					LTItemInit.CONTROL_BOX = new BlockItem(LTBlockInit.CONTROL_BOX, new Item.Properties().group(littletrainsitems)).setRegistryName(LTBlockInit.CONTROL_BOX.getRegistryName()),
 					LTItemInit.MODELLER_TABLE = new BlockItem(LTBlockInit.MODELLER_TABLE, new Item.Properties().group(littletrainsitems)).setRegistryName(LTBlockInit.MODELLER_TABLE.getRegistryName()),
 					LTItemInit.TIN_BLOCK = new BlockItem(LTBlockInit.TIN_BLOCK, new Item.Properties().group(littletrainsitems)).setRegistryName(LTBlockInit.TIN_BLOCK.getRegistryName()),
@@ -67,16 +75,23 @@ public class LittleTrains {
 		@SubscribeEvent
 		public static void RegisterBlocks(final RegistryEvent.Register<Block> event) {
 			event.getRegistry().registerAll (
-					LTBlockInit.CONTROL_BOX = new Block(Block.Properties.create(Material.MISCELLANEOUS).sound(SoundType.METAL)).setRegistryName(l("control_box")),
-					LTBlockInit.MODELLER_TABLE = new Block(Block.Properties.create(Material.MISCELLANEOUS).sound(SoundType.METAL)).setRegistryName(l("modeller_table")),
-					LTBlockInit.COBBLE_ANDESITE = new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE)).setRegistryName(l("cobble_andesite")),
-					LTBlockInit.COBBLE_HARDENED_CLAY = new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE)).setRegistryName(l("cobble_hardened_clay")),
-					LTBlockInit.BALLAST_BLOCK = new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE)).setRegistryName(l("ballast_block")),
-					LTBlockInit.COPPER_ORE = new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE)).setRegistryName(l("copper_ore")),
-					LTBlockInit.TIN_ORE = new Block(Block.Properties.create(Material.ROCK).sound(SoundType.STONE)).setRegistryName(l("tin_ore")),
-					LTBlockInit.COPPER_BLOCK = new Block(Block.Properties.create(Material.IRON).sound(SoundType.STONE)).setRegistryName(l("copper_block")),
-					LTBlockInit.TIN_BLOCK = new Block(Block.Properties.create(Material.IRON).sound(SoundType.STONE)).setRegistryName(l("tin_block")),
-					LTBlockInit.debugblock = new Block(Block.Properties.create(Material.WOOD).lightValue(15).hardnessAndResistance(0.5F).sound(SoundType.SAND)).setRegistryName(l("debugblock"))
+					//Tracks
+					LTBlockInit.TRACK = new LTBlock(Block.Properties.create(Material.MISCELLANEOUS)).setRegistryName(l("track")),
+					LTBlockInit.TRACK_BALLASTED = new LTBlock(Block.Properties.create(Material.MISCELLANEOUS)).setRegistryName(l("track_ballasted")),
+					LTBlockInit.TRACK_GRASSPLATED = new LTBlock(Block.Properties.create(Material.MISCELLANEOUS)).setRegistryName(l("track_grassplated")),
+					
+					
+					//Other
+					LTBlockInit.CONTROL_BOX = new LTBlock(Block.Properties.create(Material.MISCELLANEOUS).sound(SoundType.METAL)).setRegistryName(l("control_box")),
+					LTBlockInit.MODELLER_TABLE = new LTBlock(Block.Properties.create(Material.MISCELLANEOUS).sound(SoundType.METAL)).setRegistryName(l("modeller_table")),
+					LTBlockInit.COBBLE_ANDESITE = new LTBlock(Block.Properties.create(Material.ROCK).sound(SoundType.STONE)).setRegistryName(l("cobble_andesite")),
+					LTBlockInit.COBBLE_HARDENED_CLAY = new LTBlock(Block.Properties.create(Material.ROCK).sound(SoundType.STONE)).setRegistryName(l("cobble_hardened_clay")),
+					LTBlockInit.BALLAST_BLOCK = new LTBlock(Block.Properties.create(Material.ROCK).sound(SoundType.STONE)).setRegistryName(l("ballast_block")),
+					LTBlockInit.COPPER_ORE = new LTBlock(Block.Properties.create(Material.ROCK).sound(SoundType.STONE)).setRegistryName(l("copper_ore")),
+					LTBlockInit.TIN_ORE = new LTBlock(Block.Properties.create(Material.ROCK).sound(SoundType.STONE)).setRegistryName(l("tin_ore")),
+					LTBlockInit.COPPER_BLOCK = new LTBlock(Block.Properties.create(Material.IRON).sound(SoundType.STONE)).setRegistryName(l("copper_block")),
+					LTBlockInit.TIN_BLOCK = new LTBlock(Block.Properties.create(Material.IRON).sound(SoundType.STONE)).setRegistryName(l("tin_block")),
+					LTBlockInit.debugblock = new LTBlock(Block.Properties.create(Material.WOOD).lightValue(15).hardnessAndResistance(0.5F).sound(SoundType.SAND)).setRegistryName(l("debugblock"))
 					);
 		}
 		private static ResourceLocation l(String name)

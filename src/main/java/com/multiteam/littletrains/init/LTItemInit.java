@@ -17,5 +17,10 @@ public class LTItemInit {
 	//Special
 	public static Item CONTROL_BOX;
 	public static Item MODELLER_TABLE;
+	
+	//Tracks
+	public static Item TRACK;
+	public static Item TRACK_GRASSPLATED;
+	public static Item TRACK_BALLASTED;
 
 }

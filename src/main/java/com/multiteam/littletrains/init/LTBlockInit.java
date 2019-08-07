@@ -17,5 +17,10 @@ public class LTBlockInit {
 	//Special
 	public static Block CONTROL_BOX;
 	public static Block MODELLER_TABLE;
+	
+	//Tracks
+	public static Block TRACK;
+	public static Block TRACK_GRASSPLATED;
+	public static Block TRACK_BALLASTED;
 
 }
