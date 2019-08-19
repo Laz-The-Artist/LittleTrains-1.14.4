@@ -1,8 +1,8 @@
 {
 	"credit": "Made with Blockbench, a free, modern block model editor by JannisX11",
 	"textures": {
-		"0": "block/track_grassplated", //90Deg
-		"2_0": "block/track_grassplated"
+		"0": "littletrains:block/track_grassplated", //90Deg
+		"2_0": "littletrains:block/track_grassplated"
 	},
 	"elements": [
 		{

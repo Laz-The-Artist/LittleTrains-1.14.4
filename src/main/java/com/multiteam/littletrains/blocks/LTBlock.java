@@ -11,25 +11,14 @@ public class LTBlock extends Block {
 		super(properties);
 	}
 	
+	public BlockRenderType getRenderType(BlockState state) {
+	      return BlockRenderType.MODEL;
+	}
+	
 	public BlockRenderLayer getRenderLayer() {
-        return BlockRenderLayer.CUTOUT;
+	      return BlockRenderLayer.CUTOUT;
 	}
 	
-	public boolean isFullCube(BlockState state) {
-        return false;
-    }
 	
-    public boolean isNormalCube(BlockState state) {
-        return false;
-    }
-    
-    public boolean canCollideCheck(BlockState state, boolean b) {
-    	return false;
-    }
-    
-    public boolean isCollidable()
-	{
-		return true;
-	}
 
 }

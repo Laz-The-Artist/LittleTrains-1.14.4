@@ -4,6 +4,7 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import com.multiteam.littletrains.blocks.LTBlock;
+import com.multiteam.littletrains.blocks.LTTrack;
 import com.multiteam.littletrains.init.LTBlockInit;
 import com.multiteam.littletrains.init.LTItemInit;
 
@@ -76,9 +77,9 @@ public class LittleTrains {
 		public static void RegisterBlocks(final RegistryEvent.Register<Block> event) {
 			event.getRegistry().registerAll (
 					//Tracks
-					LTBlockInit.TRACK = new LTBlock(Block.Properties.create(Material.MISCELLANEOUS)).setRegistryName(l("track")),
-					LTBlockInit.TRACK_BALLASTED = new LTBlock(Block.Properties.create(Material.MISCELLANEOUS)).setRegistryName(l("track_ballasted")),
-					LTBlockInit.TRACK_GRASSPLATED = new LTBlock(Block.Properties.create(Material.MISCELLANEOUS)).setRegistryName(l("track_grassplated")),
+					LTBlockInit.TRACK = new LTTrack(Block.Properties.create(Material.MISCELLANEOUS)).setRegistryName(l("track")),
+					LTBlockInit.TRACK_BALLASTED = new LTTrack(Block.Properties.create(Material.MISCELLANEOUS)).setRegistryName(l("track_ballasted")),
+					LTBlockInit.TRACK_GRASSPLATED = new LTTrack(Block.Properties.create(Material.MISCELLANEOUS)).setRegistryName(l("track_grassplated")),
 					
 					
 					//Other

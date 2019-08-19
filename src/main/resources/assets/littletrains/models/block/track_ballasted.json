@@ -1,9 +1,9 @@
 {
 	"credit": "Made with Blockbench, a free, modern block model editor by JannisX11",
 	"textures": {
-		"0": "block/track",
-		"1": "block/ballast_block",
-		"particle": "blocks/ballast_block"
+		"0": "littletrains:block/track",
+		"1": "littletrains:block/ballast_block",
+		"particle": "littletrains:blocks/ballast_block"
 	},
 	"elements": [
 		{
