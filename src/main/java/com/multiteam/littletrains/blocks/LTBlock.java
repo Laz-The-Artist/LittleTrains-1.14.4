@@ -18,7 +18,5 @@ public class LTBlock extends Block {
 	public BlockRenderLayer getRenderLayer() {
 	      return BlockRenderLayer.CUTOUT;
 	}
-	
-	
 
 }

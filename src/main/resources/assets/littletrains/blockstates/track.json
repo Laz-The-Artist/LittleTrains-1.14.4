@@ -1,7 +1,20 @@
 {
     "variants": {
-        "": {
-            "model": "littletrains:block/track"
-        }
+        "facing=north,turn=false,turn90=false": { "model": "littletrains:block/track", "y": 0 },
+        "facing=east,turn=false,turn90=false": { "model": "littletrains:block/track", "y": 90 },
+        "facing=south,turn=false,turn90=false": { "model": "littletrains:block/track", "y": 180 },
+        "facing=west,turn=false,turn90=false": { "model": "littletrains:block/track", "y": 270 },
+        "facing=north,turn=true,turn90=false": { "model": "littletrains:block/track", "y": 0 },
+        "facing=east,turn=true,turn90=false": { "model": "littletrains:block/track", "y": 90 },
+        "facing=south,turn=true,turn90=false": { "model": "littletrains:block/track", "y": 180 },
+        "facing=west,turn=true,turn90=false": { "model": "littletrains:block/track", "y": 270 },
+        "facing=north,turn=false,turn90=true": { "model": "littletrains:block/track", "y": 0 },
+        "facing=east,turn=false,turn90=true": { "model": "littletrains:block/track", "y": 90 },
+        "facing=south,turn=false,turn90=true": { "model": "littletrains:block/track", "y": 180 },
+        "facing=west,turn=false,turn90=true": { "model": "littletrains:block/track", "y": 270 },
+        "facing=north,turn=true,turn90=true": { "model": "littletrains:block/track", "y": 0 },
+        "facing=east,turn=true,turn90=true": { "model": "littletrains:block/track", "y": 90 },
+        "facing=south,turn=true,turn90=true": { "model": "littletrains:block/track", "y": 180 },
+        "facing=west,turn=true,turn90=true": { "model": "littletrains:block/track", "y": 270 }
     }
 }
